@@ -1,6 +1,6 @@
 <template>
     <button
-      class="btn btn-error btn-lg"
+      class="btn btn-error btn-lg shadow-md focus:shadow-outline"
       :class="cls"
       type="button"
       style="transition: all 0.15s ease 0s;"

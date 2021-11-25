@@ -14,6 +14,7 @@ module.exports = {
                 // 'pulse-once': 'pulse 0.1s ease-in-out 1',
             },
             colors: {
+                grass: '#5c8b11',
                 // primary: '#4168BB',
                 // 'primary-50': '#455575',
                 // 'primary-100': '#567BCA',

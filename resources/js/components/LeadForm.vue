@@ -49,7 +49,7 @@
 
                                     <div class="w-full p-2 relative">
                                         <button
-                                            class="bg-orange hover:bg-orange-10 text-white w-full p-4 text-sm font-bold uppercase rounded shadow hover:shadow-lg outline-none focus:outline-none"
+                                            class="btn-primary text-white w-full p-4 text-sm font-bold uppercase rounded shadow hover:shadow-lg outline-none focus:outline-none"
                                             type="button"
                                             :disabled="$v.$invalid"
                                             @click="sendForm"

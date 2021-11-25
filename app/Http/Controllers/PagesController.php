@@ -9,26 +9,27 @@ class PagesController extends Controller
 {
     public function index()
     {
-      $blocks = collect();
-//      $blocks->push(['name' => 'directions', 'menu' => true]);
-//      $blocks->push(['name' => 'numbers', 'menu' => false]);
-//      $blocks->push(['name' => 'services', 'menu' => true]);
-//      $blocks->push(['name' => 'steps', 'menu' => true]);
-//      $blocks->push(['name' => 'reviews', 'menu' => true]);
-//      $blocks->push(['name' => 'aboutme', 'menu' => true]);
+        $blocks = collect();
+        $blocks->push(['name' => 'numbers', 'menu' => false]);
+        $blocks->push(['name' => 'realtors', 'menu' => true]);
+        $blocks->push(['name' => 'steps', 'menu' => true]);
 
-      return view('pages.index', [
-        'blocks' => $blocks,
-      ]);
+//      $blocks->push(['name' => 'services', 'menu' => true]);
+//      $blocks->push(['name' => 'reviews', 'menu' => true]);
+      $blocks->push(['name' => 'about', 'menu' => true]);
+
+        return view('pages.index', [
+            'blocks' => $blocks,
+        ]);
     }
 
     public function policy()
     {
-      $domain = Str::after(config('app.url'), '//');
+        $domain = Str::after(config('app.url'), '//');
 
-      return view('pages.policy', [
-        'blocks' => false,
-        'domain' => $domain,
-      ]);
+        return view('pages.policy', [
+            'blocks' => false,
+            'domain' => $domain,
+        ]);
     }
 }
