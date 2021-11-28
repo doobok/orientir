@@ -1,11 +1,11 @@
 <div>
-    <div class="w-full z-50 top-0 py-3 sm:py-3 absolute">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="mt-4 ml-4 lg:mt-0">
-                <a href="/" class="text-2xl text-primary-content font-bold">
+    <div class="w-full z-50 bg-black top-0 py-3 absolute">
+        <div class="mx-4 flex justify-between items-center">
+            <div class="ml-2">
+                <a href="/" class="text-2xl text-white font-bold">
                     {{-- {{config('app.name')}} --}}
-                    <img src="/img/logo.svg"
-                         class="w-36 lg:w-48 h-auto"
+                    <img src="/img/logo_v2.svg"
+                         class="h-12 md:h-16"
                          alt="{{config('app.name')}}">
                 </a>
             </div>
@@ -17,7 +17,7 @@
                             @if ($block['menu'])
                                 <li class="group pl-6">
                         <span v-scroll-to="'#{{$block['name']}}'"
-                              class="font-header font-semibold text-primary-content uppercase pt-0.5 cursor-pointer">
+                              class="font-header font-semibold text-white uppercase pt-0.5 cursor-pointer">
                           {{__('site.menu-' . $block['name'])}}
                         </span>
                                     <span class="block w-full h-0.5 bg-transparent group-hover:bg-orange"></span>
@@ -27,7 +27,7 @@
                     @endif
                     <li class="list-none group pl-16">
                         <a href="tel:+38{{preg_replace('/[^\d]/', '', config('var.phone'))}}"
-                           class="font-header font-semibold text-2xl text-primary-content uppercase pt-0.5 cursor-pointer flex flex-nowrap align-middle">
+                           class="font-header font-semibold text-2xl text-white uppercase pt-0.5 cursor-pointer flex flex-nowrap align-middle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 mt-1" width="24" height="24"
                                  viewBox="0 0 24 24" fill="currentColor">
                                 <path
@@ -79,7 +79,6 @@
                 @endif
 
                 <li class="group pt-8">
-
                     <a href="tel:+38{{preg_replace('/[^\d]/', '', config('var.phone'))}}"
                        class="font-header font-semibold text-base text-primary-content uppercase pt-0.5 cursor-pointer flex flex-nowrap inline-block align-middle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24" height="24" viewBox="0 0 24 24"
@@ -89,9 +88,7 @@
                         </svg>
                         <span>{{config('var.phone')}}</span>
                     </a>
-
                 </li>
-
             </ul>
         </div>
     </div>

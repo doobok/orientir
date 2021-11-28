@@ -74,5 +74,8 @@
             </div>
         </div>
     </div>
+    <div class="flex justify-center py-4 lg:pb-16">
+        <smpl-button txt="Получить консультацию" cls=""></smpl-button>
+    </div>
 </div>
 

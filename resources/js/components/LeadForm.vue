@@ -1,6 +1,6 @@
 <template>
     <transition name="modal">
-        <div v-show="formstatus" class="modal-mask">
+        <div v-show="formstatus" class="modal-mask glass">
             <div class="modal-wrapper">
                 <div class="modal-container text-white h-full lg:h-auto flex justify-center">
 
