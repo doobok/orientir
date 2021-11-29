@@ -158,7 +158,7 @@
     </div>
 
 
-    <div class="flex justify-center py-4 lg:py-12">
+    <div class="flex justify-center pb-6 lg:pb-20">
         <smpl-button txt="Оставить заявку" cls=""></smpl-button>
     </div>
 </div>

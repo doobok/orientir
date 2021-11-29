@@ -26,7 +26,7 @@
     /*}*/
 
     p {
-        @apply mb-4 text-justify;
+        @apply mb-4;
     }
 
     /*a {*/

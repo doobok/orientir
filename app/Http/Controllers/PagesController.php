@@ -13,10 +13,13 @@ class PagesController extends Controller
         $blocks->push(['name' => 'numbers', 'menu' => false]);
         $blocks->push(['name' => 'realtors', 'menu' => true]);
         $blocks->push(['name' => 'steps', 'menu' => true]);
+        $blocks->push(['name' => 'utp', 'menu' => false]);
+        $blocks->push(['name' => 'reviews', 'menu' => false]);
 
 //      $blocks->push(['name' => 'services', 'menu' => true]);
 //      $blocks->push(['name' => 'reviews', 'menu' => true]);
       $blocks->push(['name' => 'about', 'menu' => true]);
+      $blocks->push(['name' => 'finish', 'menu' => false]);
 
         return view('pages.index', [
             'blocks' => $blocks,

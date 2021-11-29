@@ -1,7 +1,7 @@
 <template>
     <transition name="modal">
-        <div v-show="formstatus" class="modal-mask glass">
-            <div class="modal-wrapper">
+        <div v-show="formstatus" class="modal-mask">
+            <div class="modal-wrapper glass">
                 <div class="modal-container text-white h-full lg:h-auto flex justify-center">
 
                     <div class="relative modal-body">
@@ -20,7 +20,7 @@
                                     Вы на верном пути!
                                 </div>
                                 <p class="text-base text-white m-3">
-                                    Осталось оставить контактный номер телефона и я Вам перезвоню
+                                    Осталось оставить контактный номер телефона и мы Вам перезвоним
                                 </p>
                             </div>
 
@@ -39,7 +39,7 @@
                                             type="text" name="password" autocomplete="new-password"
                                             v-model="phone"
                                             ref="phone"
-                                            class="border-0 placeholder-grey-20 text-grey-10 bg-white rounded text-xl shadow focus:outline-none focus:ring w-full p-4"
+                                            class="border-0 placeholder-gray-700 text-black bg-white rounded text-xl shadow focus:outline-none focus:ring w-full p-4"
                                             placeholder="Номер телефона"
                                             @blur="$v.phone.$touch()"
                                         />
@@ -49,7 +49,7 @@
 
                                     <div class="w-full p-2 relative">
                                         <button
-                                            class="btn-primary text-white w-full p-4 text-sm font-bold uppercase rounded shadow hover:shadow-lg outline-none focus:outline-none"
+                                            class="btn-error bg-red text-white w-full p-4 text-sm font-bold uppercase rounded shadow hover:shadow-lg outline-none focus:outline-none"
                                             type="button"
                                             :disabled="$v.$invalid"
                                             @click="sendForm"
@@ -58,13 +58,13 @@
                                                 заполните форму
                                             </template>
                                             <template v-else>
-                    <span class="flex justify-center">
-                      <svg v-if="loading" class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm8 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zm-19 0c0-6.065 4.935-11 11-11v2c-4.962 0-9 4.038-9 9 0 2.481 1.009 4.731 2.639 6.361l-1.414 1.414.015.014c-2-1.994-3.24-4.749-3.24-7.789z"/>
-                      </svg>
-                      <span>продолжить</span>
-                    </span>
+                                                <span class="flex justify-center">
+                                                  <svg v-if="loading" class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path
+                                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm8 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zm-19 0c0-6.065 4.935-11 11-11v2c-4.962 0-9 4.038-9 9 0 2.481 1.009 4.731 2.639 6.361l-1.414 1.414.015.014c-2-1.994-3.24-4.749-3.24-7.789z"/>
+                                                  </svg>
+                                                  <span>продолжить</span>
+                                                </span>
                                             </template>
                                         </button>
                                     </div>
@@ -72,7 +72,7 @@
 
                                 <div class="w-full flex text-center justify-center">
                                     <p class="text-sm text-grey-50 m-3">
-                                        * будьте спокойны, я никогда не передам номер телефона третьим лицам
+                                        * будьте спокойны, мы никогда не передадим номер телефона третьим лицам
                                     </p>
                                 </div>
                             </div>
