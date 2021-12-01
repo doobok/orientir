@@ -1,10 +1,10 @@
 <div>
-    <div class="w-full z-50 bg-black top-0 py-3 absolute">
+    <div class="w-full z-50 bg-center bg-cover bg-no-repeat top-0 py-3 absolute" style="background-image: url(/img/nav_bg.jpg);">
         <div class="mx-4 flex justify-between items-center">
             <div class="ml-2">
                 <a href="/" class="text-2xl text-white font-bold">
                     {{-- {{config('app.name')}} --}}
-                    <img src="/img/logo_v2.svg"
+                    <img src="/img/logo.svg"
                          class="h-12 md:h-16"
                          alt="{{config('app.name')}}">
                 </a>
@@ -15,12 +15,12 @@
                     @if ($blocks)
                         @foreach ($blocks as $block)
                             @if ($block['menu'])
-                                <li class="group pl-6">
-                        <span v-scroll-to="'#{{$block['name']}}'"
-                              class="font-header font-semibold text-white uppercase pt-0.5 cursor-pointer">
-                          {{__('site.menu-' . $block['name'])}}
-                        </span>
-                                    <span class="block w-full h-0.5 bg-transparent group-hover:bg-orange"></span>
+                                <li class="group pl-6 bg-black py-2 pr-3 border-2 border-black hover:border-white">
+                                    <span v-scroll-to="'#{{$block['name']}}'"
+                                          class="font-header font-semibold text-white uppercase pt-0.5 cursor-pointer">
+                                      {{__('site.menu-' . $block['name'])}}
+                                    </span>
+{{--                                    <span class="block w-full h-0.5 bg-transparent group-hover:bg-primary"></span>--}}
                                 </li>
                             @endif
                         @endforeach
@@ -54,7 +54,7 @@
 
     <div id="collapse-navbar"
          class="fixed hidden inset-0 bg-black bg-opacity-80 z-50 min-h-screen xl:hidden transition-opacity opacity-100 pointer-events-auto">
-        <div class="w-2/3 md:w-1/3 bg-primary min-h-screen absolute right-0 shadow py-4 px-8">
+        <div class="w-3/4 md:w-1/3 bg-primary min-h-screen absolute right-0 shadow py-4 px-8">
             <button class="absolute top-0 right-0 mt-4 mr-4"
                     onclick="toggleNavbar('collapse-navbar')"
             >
@@ -63,7 +63,7 @@
                      alt="">
             </button>
 
-            <ul class="list-none flex flex-col mt-8">
+            <ul class="list-none flex flex-col -ml-2 mt-16">
                 @if ($blocks)
                     @foreach ($blocks as $block)
                         @if ($block['menu'])

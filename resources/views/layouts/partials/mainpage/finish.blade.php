@@ -8,17 +8,17 @@
             </div>
             <div class="lg:pl-24 pt-8 sm:pt-10 lg:pt-0">
                 <h2>
-                    Дом для семьи под ключ
+                    {{__('home.finish-h2')}}
                 </h2>
                 <div>
                     <ul>
-                        <li>со всеми необходимыми документами</li>
-                        <li>с ремонтом или без</li>
-                        <li>со всеми подведенными коммуникациями</li>
-                        <li>в экологически чистом регионе</li>
+                        <li>{{__('home.finish-li-1')}}</li>
+                        <li>{{__('home.finish-li-2')}}</li>
+                        <li>{{__('home.finish-li-3')}}</li>
+                        <li>{{__('home.finish-li-4')}}</li>
                     </ul>
                     <div class="flex justify-center py-4 lg:py-8">
-                        <smpl-button txt="Купить уютный дом" cls="w-full"></smpl-button>
+                        <smpl-button txt="{{__('home.finish-button')}}" cls="w-full"></smpl-button>
                     </div>
                 </div>
             </div>

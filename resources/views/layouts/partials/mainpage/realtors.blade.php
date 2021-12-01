@@ -1,4 +1,4 @@
-<div id="realtors" class="relative py-10">
+<div id="realtors" class="relative pb-10">
     <div class="absolute inset-x-0 top-0 text-primary">
         <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1" preserveAspectRatio="none">
 {{--            <path d="M0 12.044c48.89-6.273 86.224-9.41 112-9.41 25.776 0 63.11 3.137 112 9.41V0H0Z"/>--}}
@@ -8,11 +8,11 @@
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-2xl mb-10 md:mx-auto sm:text-center lg:max-w-3xl md:mb-12">
             <h2>
-                В каких случаях обращаться к риэлтору
+                {{__('home.rieltor-h2')}}
             </h2>
             <h4>
                 <mark>
-                    И как понять, что Вам необходимы услуги агентства по недвижимости
+                    {{__('home.rieltor-mark')}}
                 </mark>
             </h4>
         </div>
@@ -24,9 +24,9 @@
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center mt-2">
-                    <p class="text-lg font-bold text-center">Осмотрительность</p>
+                    <p class="text-lg font-bold text-center">{{__('home.rieltor-t-1')}}</p>
                     <p class="text-sm tracking-wide text-gray-800">
-                        Pommy ipsum bent as a nine bob note naff off biscuits nowt, a cuppa unhand me sir hadn't done it in donkey's years sod's law.
+                        {{__('home.rieltor-d-1')}}
                     </p>
                 </div>
             </div>
@@ -40,9 +40,9 @@
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center mt-2">
-                    <p class="text-lg font-bold text-center">Нехватка знаний</p>
+                    <p class="text-lg font-bold text-center">{{__('home.rieltor-t-2')}}</p>
                     <p class="text-sm tracking-wide text-gray-800">
-                        Secondary fermentation degrees plato units of bitterness, cask conditioned ale ibu real ale pint glass craft beer. krausen goblet grainy ibu.
+                        {{__('home.rieltor-d-2')}}
                     </p>
                 </div>
             </div>
@@ -53,9 +53,9 @@
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center mt-2">
-                    <p class="text-lg font-bold text-center">Нехватка времени</p>
+                    <p class="text-lg font-bold text-center">{{__('home.rieltor-t-3')}}</p>
                     <p class="text-sm tracking-wide text-gray-800">
-                        I just closed my eyes and in a nanosecond I cured myself from this ridiculous model of disease, addiction and obsession.
+                        {{__('home.rieltor-d-3')}}
                     </p>
                 </div>
             </div>
@@ -66,16 +66,16 @@
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center mt-2">
-                    <p class="text-lg font-bold text-center">Переезд</p>
+                    <p class="text-lg font-bold text-center">{{__('home.rieltor-t-4')}}</p>
                     <p class="text-sm tracking-wide text-gray-800">
-                        Est Schlitz shoreditch fashion axe. Messenger bag cupidatat Williamsburg sustainable aliqua, umami shabby chic artisan duis pickled.
+                        {{__('home.rieltor-d-4')}}
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="flex justify-center py-4 lg:pb-16">
-        <smpl-button txt="Получить консультацию" cls=""></smpl-button>
+        <smpl-button txt="{{__('home.rieltor-button')}}" cls=""></smpl-button>
     </div>
 </div>
 

@@ -14,22 +14,17 @@
             </div>
             <div class="lg:pl-24 pt-8 sm:pt-10 lg:pt-0">
                 <h2>
-                    Агентство недвижимости Orientir
+                    {{__('home.about-h2')}}
                 </h2>
                 <h4>
                     <mark>
-                        лучшее агентство недвижимости в регионе по отзывам клиентов
+                        {{__('home.about-mark')}}
                     </mark>
                 </h4>
                 <div>
-                    <ul>
-                        <li>более 6 лет на рынке недвижимости</li>
-                        <li>команда из более 15 проффесиональных риелторов</li>
-                        <li>более 1500 обьектов в каталоге недвижимости</li>
-                        <li>около 20 сделок в неделю</li>
-                    </ul>
+                    {!! __('home.about-text') !!}
                     <div class="flex justify-center py-4 lg:py-8">
-                        <smpl-button txt="Связаться с риэлтором" cls="w-full md:w-2/3"></smpl-button>
+                        <smpl-button txt="{{__('home.about-button')}}" cls="w-full md:w-2/3"></smpl-button>
                     </div>
                 </div>
             </div>

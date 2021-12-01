@@ -1,16 +1,16 @@
 <div id="utp" class="bg-center bg-cover bg-no-repeat relative py-8" style="background-image: url(/img/main_bg.jpg);">
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-2xl md:mx-auto sm:text-center lg:max-w-3xl">
             <h2 class="text-white">
-                Кэшбэк до
-                <mark>
-                    <span class="text-primary-content">100$</span>
-                </mark>
-                при покупке дома
+                {!!  __('home.utp-h2', [
+                    'n' => '<mark>
+                                <span class="text-primary-content">100$</span>
+                            </mark>'
+                ]) !!}
             </h2>
             <h4>
                 <mark>
-                    Получи дополнительную выгоду от покупки дома
+                    {{__('home.utp-mark')}}
                 </mark>
             </h4>
             <div class="card glass card-body text-white">
@@ -22,15 +22,15 @@
                         </svg>
                     </p>
                     <div>
-                        <h4 class="text-left">Оставьте заявку сейчас и гарантированно получите до 100 долларов кэшбека при покупке дома</h4>
+                        <h4 class="text-left">{{__('home.utp-title')}}</h4>
                         <p>
-                            Мы вернем Вам часть комиссии риэлтора, чтобы Вы могли потратить ее на собственные нужды. Сумма кэшбека на прямую зависит от стоимости недвижимости, которую вы приобретаете
+                            {{__('home.utp-subtitle')}}
                         </p>
                     </div>
                 </div>
             </div>
             <div class="flex justify-center pt-4 lg:pt-12">
-                <smpl-button txt="Записаться на просмотр" cls=""></smpl-button>
+                <smpl-button txt="{{__('home.utp-button')}}" cls=""></smpl-button>
             </div>
         </div>
     </div>

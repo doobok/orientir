@@ -32,7 +32,7 @@ export default {
 
         // отправка лида
         SEND_LEAD: (context, payload) => {
-            console.log(payload);
+            // console.log(payload);
             return Axios.post('/api/v1/send-lead', tempyGen(payload))
                 .then((response) => {
                     return response.data

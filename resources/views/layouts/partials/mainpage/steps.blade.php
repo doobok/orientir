@@ -7,11 +7,11 @@
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
         <div class="max-w-2xl mb-10 md:mx-auto sm:text-center lg:max-w-3xl md:mb-12">
             <h2>
-                Как мы работаем
+                {{__('home.steps-h2')}}
             </h2>
             <h4>
                 <mark class="bg-yellow-100">
-                    Четыре простых шага в приобретении собственного дома
+                    {{__('home.steps-mark')}}
                 </mark>
             </h4>
         </div>
@@ -39,9 +39,9 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-3xl font-semibold sm:text-xl">Заявка</p>
+                        <p class="text-3xl font-semibold sm:text-xl">{{__('home.steps-t-1')}}</p>
                         <p class="text-sm text-gray-700">
-                            All recipes are written using certain conventions, which define the characteristics of common ingredients. The rules vary from place to place.
+                            {{__('home.steps-d-1')}}
                         </p>
                     </div>
                 </div>
@@ -66,9 +66,9 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-3xl font-semibold sm:text-xl">Звонок</p>
+                        <p class="text-3xl font-semibold sm:text-xl">{{__('home.steps-t-2')}}</p>
                         <p class="text-sm text-gray-700">
-                            A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.
+                            {{__('home.steps-d-2')}}
                         </p>
                     </div>
                 </div>
@@ -93,9 +93,9 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-3xl font-semibold sm:text-xl">Просмотр</p>
+                        <p class="text-3xl font-semibold sm:text-xl">{{__('home.steps-t-3')}}</p>
                         <p class="text-sm text-gray-700">
-                            A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.
+                            {{__('home.steps-d-3')}}
                         </p>
                     </div>
                 </div>
@@ -121,9 +121,9 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-3xl font-semibold sm:text-xl">Подписание</p>
+                        <p class="text-3xl font-semibold sm:text-xl">{{__('home.steps-t-4')}}</p>
                         <p class="text-sm text-gray-700">
-                            A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.
+                            {{__('home.steps-d-4')}}
                         </p>
                     </div>
                 </div>
@@ -147,9 +147,9 @@
                         </div>
                     </div>
                     <div>
-                        <p class="text-3xl font-semibold sm:text-xl">Заселение</p>
+                        <p class="text-3xl font-semibold sm:text-xl">{{__('home.steps-t-5')}}</p>
                         <p class="text-sm text-gray-700">
-                            The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Michael Knight a young loner.
+                            {{__('home.steps-d-5')}}
                         </p>
                     </div>
                 </div>
@@ -158,8 +158,8 @@
     </div>
 
 
-    <div class="flex justify-center pb-6 lg:pb-20">
-        <smpl-button txt="Оставить заявку" cls=""></smpl-button>
+    <div class="flex justify-center pb-16 lg:pb-20">
+        <smpl-button txt="{{__('home.steps-button')}}" cls=""></smpl-button>
     </div>
 </div>
 

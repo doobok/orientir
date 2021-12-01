@@ -2,8 +2,9 @@
 
 return [
 
-    'menu-realtors' => 'Когда нужен риэлтор',
+    'menu-realtors' => 'Нужен риэлтор?',
     'menu-steps' => 'Как мы работаем',
     'menu-about' => 'О нас',
+    'menu-reviews' => 'Отзывы'
 
 ];

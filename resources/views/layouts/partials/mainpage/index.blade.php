@@ -7,35 +7,34 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
         <div>
-            <img src="/img/home.jpg" alt="Дом купить" class="lg:border-8 border-primary shadow-lg lg:rounded-3xl">
+            <img src="/img/home.jpg" alt="Дом купить" class="lg:border-8 border-primary shadow-lg">
         </div>
         <div
             class="px-4 pt-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:mt-10 2xl:mt-20 lg:pt-20">
             <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl">
                 <h1>
-                    Уютный дом для вашей семьи
+                    {{__('home.h1')}}
                 </h1>
                 <h3>
                     <mark>
-                        Не тратьте время на поиск дома, мы уже все сделали за вас. Десятки проверенных домов ждут своих
-                        владельцев.
+                        {{__('home.first-mark')}}
                     </mark>
                 </h3>
-                <h4> Звоните или оставляйте заявку сегодня и Вы получите: </h4>
+                <h4>{{__('home.first-list')}}</h4>
                 <div class="card glass card-body p-0 pl-2">
                     <ul class="list-outside">
-                        <li>обслуживание вне очереди, мы уделим Вам максимальное внимание</li>
-                        <li>лучший дом на основании ваших пожеланий по справедливой цене</li>
-                        <li>юридическое оформление, мы возьмем на себя все заботы с бумагами</li>
+                        <li>{{__('home.first-list-1')}}</li>
+                        <li>{{__('home.first-list-2')}}</li>
+                        <li>{{__('home.first-list-3')}}</li>
                     </ul>
                 </div>
                 <div class="flex justify-center py-4 lg:py-16">
-                    <smpl-button txt="Купить дом" cls="w-full md:w-1/2"></smpl-button>
+                    <smpl-button txt="{{__('home.first-button')}}" cls="w-full md:w-1/2"></smpl-button>
                 </div>
             </div>
         </div>
     </div>
-    <span v-scroll-to="'#numbers'"
+    <span v-scroll-to="'#realtors'"
           class="flex items-center justify-center w-10 h-10 mx-auto duration-300 transform border-4 border-primary rounded-full bg-black hover:text-error hover:shadow hover:scale-110 text-primary"
     >
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">

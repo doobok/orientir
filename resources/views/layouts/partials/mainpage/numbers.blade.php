@@ -4,25 +4,25 @@
             <div class="text-center border-accent md:border-r">
                 <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">1500+</h6>
                 <p class="text-center text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-                    обьектов недвижимости
+                    {{__('home.num-1')}}
                 </p>
             </div>
             <div class="text-center border-accent md:border-r">
                 <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">800+</h6>
                 <p class="text-center text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-                    из них домов
+                    {{__('home.num-2')}}
                 </p>
             </div>
             <div class="text-center border-accent md:border-r">
                 <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl"><span class="text-xl lg:text-2xl xl:text-3xl">более</span> 6</h6>
                 <p class="text-center text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-                    лет на рынке <br> недвижимости
+                    {{__('home.num-3')}}
                 </p>
             </div>
             <div class="text-center">
                 <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">98%</h6>
                 <p class="text-center text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-                    довольных клиентов
+                    {{__('home.num-4')}}
                 </p>
             </div>
         </div>
