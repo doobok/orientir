@@ -10,7 +10,7 @@
             <img src="/img/home.jpg" alt="Дом купить" class="lg:border-8 border-primary shadow-lg">
         </div>
         <div
-            class="px-4 pt-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:mt-10 2xl:mt-20 lg:pt-20">
+            class="px-4 pt-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:mt-10 2xl:mt-20 xl:pt-20">
             <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl">
                 <h1>
                     {{__('home.h1')}}

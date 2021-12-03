@@ -5,7 +5,7 @@
             <path d="M224 12.044c-48.89-6.273-86.224-9.41-112-9.41-25.776 0-63.11 3.137-112 9.41V0h224Z"/>
         </svg>
     </div>
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
         <div class="max-w-2xl mb-10 md:mx-auto sm:text-center lg:max-w-3xl md:mb-12">
             <h2>
                 {{__('home.rieltor-h2')}}
@@ -72,6 +72,9 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <p class="text-sm text-center w-full md:w-2/3">*{{__('home.rieltor-desc')}}</p>
         </div>
     </div>
     <div class="flex justify-center py-4 lg:pb-16">
