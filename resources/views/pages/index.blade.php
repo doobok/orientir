@@ -7,7 +7,7 @@
         @slot('description') {{__('home.desc',
             ['phone' => config('var.phone')]
         )}} @endslot
-        @slot('image') /home.jpg @endslot
+        @slot('image') /img/home.jpg @endslot
         @slot('date') @endslot
 
     @endcomponent
