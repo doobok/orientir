@@ -28,6 +28,13 @@
                         <li>{{__('home.first-list-3')}}</li>
                     </ul>
                 </div>
+                @php
+                    $cities = __('site.cities')
+                @endphp
+                @foreach ($cities as $c)
+                    @include('components.location-bage', ['name' => $c])
+                @endforeach
+
                 <div class="flex justify-center py-4 lg:py-16">
                     <smpl-button txt="{{__('home.first-button')}}" cls="w-full md:w-1/2"></smpl-button>
                 </div>

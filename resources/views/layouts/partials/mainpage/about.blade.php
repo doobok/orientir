@@ -7,22 +7,27 @@
     </div>
     <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
         <div class="flex flex-col lg:flex-row justify-center items-center">
-            <div class="w-full md:w-1/3">
-                <img src="/img/photo.jpg"
+            <div class="w-full md:w-1/3 xl:w-1/4">
+                <img src="/img/founders.jpg"
                      class="w-full"
-                     alt="Orientir">
+                     alt="founders Orientir">
             </div>
-            <div class="lg:pl-24 pt-8 sm:pt-10 lg:pt-0">
-                <h2>
+            <div class="w-full md:w-2/3 xl:w-3/4 lg:pl-20 pt-8 sm:pt-10 lg:pt-0">
+                <h2 class="mb-0">
                     {{__('home.about-h2')}}
                 </h2>
-                <h4>
+                <h3 class="my-2">
+                    {{__('home.about-subtitle')}}
+                </h3>
+                <h4 class="mt-0">
                     <mark>
                         {{__('home.about-mark')}}
                     </mark>
                 </h4>
                 <div>
-                    {!! __('home.about-text') !!}
+                    <div class="text-lg">
+                        {!! __('home.about-text') !!}
+                    </div>
                     <div class="flex justify-center py-4 lg:py-8">
                         <smpl-button txt="{{__('home.about-button')}}" cls="w-full md:w-2/3"></smpl-button>
                     </div>
