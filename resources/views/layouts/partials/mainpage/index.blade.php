@@ -31,7 +31,7 @@
                 @php
                     $cities = __('site.cities')
                 @endphp
-                <div class="flex justify-center wrap gap-1">
+                <div class="flex justify-center flex-wrap gap-1">
                     @foreach ($cities as $c)
                         @include('components.location-bage', ['name' => $c])
                     @endforeach
