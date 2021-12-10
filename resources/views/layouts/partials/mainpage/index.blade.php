@@ -31,11 +31,13 @@
                 @php
                     $cities = __('site.cities')
                 @endphp
-                @foreach ($cities as $c)
-                    @include('components.location-bage', ['name' => $c])
-                @endforeach
+                <div class="flex justify-center wrap gap-1">
+                    @foreach ($cities as $c)
+                        @include('components.location-bage', ['name' => $c])
+                    @endforeach
+                </div>
 
-                <div class="flex justify-center py-4 lg:py-16">
+                <div class="flex justify-center py-8 lg:py-16">
                     <smpl-button txt="{{__('home.first-button')}}" cls="w-full md:w-1/2"></smpl-button>
                 </div>
             </div>

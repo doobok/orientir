@@ -25,7 +25,7 @@
                     </mark>
                 </h4>
                 <div>
-                    <div class="text-lg">
+                    <div>
                         {!! __('home.about-text') !!}
                     </div>
                     <div class="flex justify-center py-4 lg:py-8">
