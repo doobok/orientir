@@ -7,7 +7,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
         </div>
     </div>
-    <div class="avatar online ml-4">
+    <div class="avatar ml-4">
         <div class="rounded-full w-20 h-20">
             <img src="{{$image}}">
         </div>

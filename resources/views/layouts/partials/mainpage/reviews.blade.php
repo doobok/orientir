@@ -16,10 +16,10 @@
                 </mark>
             </h4>
             <div class="my-8">
-                @for($r=1; $r<7; $r++)
+                @for($r=1; $r<=6; $r++)
                     @include('components.review', [
                         'text' => __('home.review-' . $r),
-                        'image' => 'http://daisyui.com/tailwind-css-component-profile-1@94w.png',
+                        'image' => '/img/reviews/' . $r . '.jpg',
                     ])
                 @endfor
             </div>
