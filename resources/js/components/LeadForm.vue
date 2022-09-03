@@ -15,10 +15,10 @@
                             <template id="lead-form" v-if="!sended">
                                 <div class="w-full flex text-center justify-center flex-col">
                                     <div class="text-2xl font-semibold text-white flex flex-row justify-center">
-                                        Вы на верном пути!
+                                        Ви на правильному шляху!
                                     </div>
                                     <p class="text-base text-white m-3">
-                                        Осталось оставить контактный номер телефона и мы Вам перезвоним
+                                        Залиште контактний номер телефону, і ми Вам зателефонуємо
                                     </p>
                                 </div>
                                 <div v-if="errorshow" class="text-lg text-center">
@@ -29,17 +29,17 @@
                                         <!-- phone -->
                                         <input type="text" name="phone" hidden>
                                         <div class="w-full p-2 relative mb-3">
-                                            <span class="text-sm text-white">Номер телефона</span>
+                                            <span class="text-sm text-white">Номер телефону</span>
                                             <input
                                                 type="text" name="password" autocomplete="new-password"
                                                 v-model="phone"
                                                 ref="phone"
                                                 class="border-0 placeholder-gray-700 text-black bg-white rounded text-xl shadow focus:outline-none focus:ring w-full p-4"
-                                                placeholder="Номер телефона"
+                                                placeholder=" Номер телефону"
                                                 @blur="$v.phone.$touch()"
                                             />
                                             <span v-if="$v.phone.$error"
-                                                  class="text-xs text-white p-1 rounded opacity-90 bg-red absolute -bottom-2 left-3">введите действительный номер телефона</span>
+                                                  class="text-xs text-white p-1 rounded opacity-90 bg-red absolute -bottom-2 left-3">введіть дійсний номер телефону</span>
                                         </div>
 
                                         <div class="w-full p-2 relative">
@@ -50,7 +50,7 @@
                                                 @click="sendForm"
                                             >
                                                 <template v-if="$v.$invalid">
-                                                    заполните форму
+                                                    заповніть форму
                                                 </template>
                                                 <template v-else>
                                                 <span class="flex justify-center">
@@ -58,7 +58,7 @@
                                                     <path
                                                         d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm8 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zm-19 0c0-6.065 4.935-11 11-11v2c-4.962 0-9 4.038-9 9 0 2.481 1.009 4.731 2.639 6.361l-1.414 1.414.015.014c-2-1.994-3.24-4.749-3.24-7.789z"/>
                                                   </svg>
-                                                  <span>продолжить</span>
+                                                  <span>продовжити</span>
                                                 </span>
                                                 </template>
                                             </button>
@@ -67,7 +67,7 @@
 
                                     <div class="w-full flex text-center justify-center">
                                         <p class="text-sm text-grey-50 m-3">
-                                            * будьте спокойны, мы никогда не передадим номер телефона третьим лицам
+                                            * не хвилюйтесь, ми ніколи не передамо номер телефону третім особам
                                         </p>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                         <span>Готово</span>
                                     </div>
                                     <p class="text-base text-gray-300 m-3">
-                                        Номер телефона успешно отправлен, ☎️ ожидайте звонка!
+                                        Номер телефону успішно надіслано, ☎️ очікуйте дзвінка!
                                     </p>
                                     <div class="flex justify-center mt-3">
                                         <button
@@ -92,7 +92,7 @@
                                             type="button"
                                             @click="close"
                                         >
-                                            Вернутся к просмотру сайта
+                                            Повернутись до перегляду сайту
                                         </button>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ export default {
                     } else {
                         this.loading = false;
                         this.errorshow = true;
-                        this.error = 'Возникла ошибка. Данные не удалось отправить. Попробуйте повторить попытку немного позже.';
+                        this.error = 'Виникла помилка. Дані не вдалося надіслати. Повторіть спробу трохи пізніше.';
                         // console.log(res);
                     }
                 })

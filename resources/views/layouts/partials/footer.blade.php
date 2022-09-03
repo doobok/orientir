@@ -4,7 +4,7 @@
       <p class="text-sm text-center sm:text-left">© {{date("Y")}} Copyright —
         {{config('app.name')}}
       </p>
-      <a href="/policy" class="link link-neutral sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-sm">Политика конфиденциальности</a>
+      <a href="/policy" class="link link-neutral sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-sm">{{__('site.policy')}}</a>
     </div>
   </div>
 </footer>

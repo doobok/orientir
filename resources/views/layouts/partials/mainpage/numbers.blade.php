@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div class="text-center border-accent md:border-r">
-                <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl"><span class="text-xl lg:text-2xl xl:text-3xl">более</span> 6</h6>
+                <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl"><span class="text-xl lg:text-2xl xl:text-3xl">{{__('home.num-more')}}</span> 6</h6>
                 <p class="text-center text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
                     {{__('home.num-3')}}
                 </p>
