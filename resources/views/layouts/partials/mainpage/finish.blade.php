@@ -17,6 +17,11 @@
                         <li>{{__('home.finish-li-3')}}</li>
                         <li>{{__('home.finish-li-4')}}</li>
                     </ul>
+                    <div class="flex justify-center pt-2">
+                        <span class="border-2 border-secondary p-2 rounded-md border-dashed">
+                            {{ __('home.no-commission') }}
+                        </span>
+                    </div>
                     <div class="flex justify-center py-4 lg:py-8">
                         <smpl-button txt="{{__('home.finish-button')}}" cls="w-full"></smpl-button>
                     </div>

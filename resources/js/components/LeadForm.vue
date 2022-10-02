@@ -153,6 +153,8 @@ export default {
                         this.loading = false;
                         this.errorshow = true;
                         this.error = 'Виникла помилка. Дані не вдалося надіслати. Повторіть спробу трохи пізніше.';
+
+                        gtag('event', 'errorSendPhone', {'event_category': 'errors', 'event_label': this.slug});
                         // console.log(res);
                     }
                 })
